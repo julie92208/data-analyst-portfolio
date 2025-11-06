@@ -19,6 +19,6 @@ This portfolio showcases my analytical projects, dashboards, and SQL solutions.
 | Power BI | [HR Insights Dashboard](./PowerBI/project1_hr_dashboard) | Employee metrics analysis |
 
 ## Contact
-- Email (juliejulie92208@gmail.com)
-- LinkedIn (www.linkedin.com/in/julie-jang-ya-jwu)
+- Email juliejulie92208@gmail.com
+- LinkedIn www.linkedin.com/in/julie-jang-ya-jwu
 
