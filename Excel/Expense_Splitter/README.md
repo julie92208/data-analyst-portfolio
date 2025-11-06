@@ -30,7 +30,7 @@ It calculates who owes who, keeps a history log, and provides a one-click “Set
    - Save a record in the **History** sheet
    - Clear inputs for the next round
 
-**Preview**
+## Preview
 ![screenshot](assets/split-expense-preview.png)
 
 ## Apps Script
