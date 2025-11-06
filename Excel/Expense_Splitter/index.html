@@ -1,54 +1,72 @@
-# Expense Splitter (Google Sheets + Apps Script)
-
-## Overview
-This project automates expense sharing between two people using Google Sheets and Apps Script.  
-It calculates who owes who, saves settlement history, and clears the input range for the next round.
-
-## Features
-- Automatic calculation based on payment ratio  
-- One-click “Settle Up” button with confirmation alert  
-- History sheet that records past settlements  
-- Simple UI for easy use
-
-## Technical Details
-| Category | Tools / Techniques |
-|-----------|--------------------|
-| Platform | Google Sheets |
-| Language | Google Apps Script (JavaScript) |
-| Formulas | IF, SUMIF, ROUND, ARRAYFORMULA |
-| Automation | UI alerts, appendRow(), clearContent() |
-| Visualization | Conditional formatting, color-coded results |
-
-## Script Example
-```javascript
-function myClear() {
-  var ui = SpreadsheetApp.getUi();
-  var response = ui.alert(
-    '確定結清嗎阿寶？',
-    '這個動作會清空 A2:E30 的所有內容，並將結算紀錄存入 History 表。',
-    ui.ButtonSet.YES_NO
-  );
-
-  if (response == ui.Button.YES) {
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getActiveSheet();
-    var historySheet = ss.getSheetByName('History');
-
-    if (!historySheet) {
-      historySheet = ss.insertSheet('History');
-      historySheet.appendRow(['Date', 'Summary']);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Excel Projects | Julie's Portfolio</title>
+  <style>
+    body {
+      font-family: "Inter", "Noto Sans", sans-serif;
+      background: #f9fafb;
+      padding: 2rem;
+      color: #333;
     }
+    h1 {
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      color: #007acc;
+    }
+    a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1> Excel Projects</h1>
+  <p style="text-align:center;">Explore my Excel and Google Sheets automations & dashboards.</p>
 
-    var resultCell = sheet.getRange('H5:I5').getValue();
+  <div class="grid">
+    <div class="card">
+      <h2>SplitEase – Smart Expense Splitter</h2>
+      <p>Google Sheets tool for tracking and splitting shared expenses fairly.</p>
+      <a href="splitease/index.html">View Project →</a>
+    </div>
 
-    var date = new Date();
-    historySheet.appendRow([date, resultCell]);
+    <div class="card">
+      <h2>KPI Dashboard</h2>
+      <p>Interactive Excel dashboard for tracking key business performance metrics.</p>
+      <a href="kpi-dashboard/index.html">View Project →</a>
+    </div>
 
-    sheet.getRange('A2:E30').clearContent();
+    <div class="card">
+      <h2>Sales Report Automation</h2>
+      <p>Automated Excel system that generates sales reports using macros and formulas.</p>
+      <a href="sales-report/index.html">View Project →</a>
+    </div>
+  </div>
 
-    ui.alert('已結清並將紀錄保存至 History！');
-  } else {
-    ui.alert('取消囉～');
-  }
-}
+  <p style="text-align:center; margin-top:2rem;">
+    <a href="../index.html">← Back to Portfolio</a>
+  </p>
+</body>
+</html>
+
 
