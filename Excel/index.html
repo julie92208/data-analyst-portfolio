@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Excel Projects | Julie’s Data Analyst Portfolio</title>
   <style>
     body {
@@ -36,32 +36,55 @@
       border-bottom: 2px solid #007acc;
       padding-bottom: 0.3rem;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-    .card {
+
+    /* Project Cards Layout */
+    .project {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       background: white;
       border: 1px solid #ddd;
       border-radius: 10px;
-      padding: 1.2rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       transition: transform 0.2s ease;
     }
-    .card:hover {
+    .project:hover {
       transform: translateY(-4px);
     }
-    .card h3 {
-      margin-top: 0;
+    .emoji {
+      font-size: 2rem;
+      margin-right: 1rem;
     }
-    a {
+    .project-content {
+      flex: 1;
+    }
+    .project h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #007acc;
+    }
+    .project ul {
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+      padding-left: 1.2rem;
+    }
+    .project ul li {
+      margin-bottom: 0.3rem;
+    }
+    .project a {
       color: #007acc;
       text-decoration: none;
+      font-weight: 500;
     }
-    a:hover {
+    .project a:hover {
       text-decoration: underline;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 2.5rem;
     }
     footer {
       text-align: center;
@@ -70,11 +93,6 @@
       padding: 2rem 0;
       border-top: 1px solid #ddd;
       margin-top: 3rem;
-    }
-    .back {
-      display: inline-block;
-      margin-top: 2rem;
-      text-align: center;
     }
   </style>
 </head>
@@ -87,28 +105,58 @@
   <main>
     <h2>💼 Featured Projects</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h3>💰 SplitEase – Smart Expense Splitter</h3>
-        <p>A collaborative Google Sheets tool to track shared expenses and automate settlement.</p>
+    <div class="project">
+      <div class="emoji">💰</div>
+      <div class="project-content">
+        <h3>SplitEase – Smart Expense Splitter</h3>
+        <ul>
+          <li>Built in Google Sheets with structured tables and formulas for shared expense tracking</li>
+          <li>Used <code>IF</code>, <code>SUMIF</code>, and nested logic for automated balance calculations</li>
+          <li>Integrated “Settle Up” macro button for easy balance reconciliation</li>
+          <li>Designed user-friendly layout for couples and roommates to split bills effortlessly</li>
+        </ul>
         <a href="Expense_Splitter/index.html">View Project →</a>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>📈 KPI Dashboard</h3>
-        <p>An interactive Excel dashboard that visualizes key performance metrics for business operations.</p>
+    <div class="project">
+      <div class="emoji">📈</div>
+      <div class="project-content">
+        <h3>KPI Dashboard</h3>
+        <ul>
+          <li>Interactive Excel dashboard with dynamic charts and pivot tables</li>
+          <li>Used slicers and drop-down menus for quick filtering by department or region</li>
+          <li>Summarized key metrics (Revenue, Profit Margin, ROI) in real time</li>
+          <li>Focused on clarity and visual storytelling through color-coded trends</li>
+        </ul>
         <a href="KPI_Dashboard/index.html">View Project →</a>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>📊 Sales Report Automation</h3>
-        <p>Automated reporting system built using Excel macros and formulas for daily sales insights.</p>
+    <div class="project">
+      <div class="emoji">📊</div>
+      <div class="project-content">
+        <h3>Sales Report Automation</h3>
+        <ul>
+          <li>Automated daily report generation using Excel VBA macros</li>
+          <li>Consolidated data from multiple sheets into one unified dashboard</li>
+          <li>Reduced manual reporting time by 80%</li>
+          <li>Implemented conditional formatting to highlight sales anomalies</li>
+        </ul>
         <a href="Sales_Report_Automation/index.html">View Project →</a>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>📉 Budget Tracker</h3>
-        <p>An Excel-based monthly budget tracker for personal finance management with SUMIF formulas.</p>
+    <div class="project">
+      <div class="emoji">📉</div>
+      <div class="project-content">
+        <h3>Budget Tracker</h3>
+        <ul>
+          <li>Monthly personal finance tracker using <code>SUMIF</code> and <code>IF</code> functions</li>
+          <li>Visualized expenses by category with auto-calculated savings rate</li>
+          <li>Used data validation for clean input and drop-down selection</li>
+          <li>Protected formula cells to prevent editing errors</li>
+        </ul>
         <a href="Budget_Tracker/index.html">View Project →</a>
       </div>
     </div>
@@ -123,4 +171,5 @@
   </footer>
 </body>
 </html>
+
 
