@@ -32,6 +32,8 @@ It calculates who owes who, keeps a history log, and provides a one-click “Set
 
 ## Apps Script
 
+/** @OnlyCurrentDoc */
+
 function myClear() {
   var ui = SpreadsheetApp.getUi();
   var response = ui.alert(
