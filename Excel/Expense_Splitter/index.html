@@ -1,1 +1,54 @@
+# 💰 Expense Splitter (Google Sheets + Apps Script)
+
+## Overview
+This project automates expense sharing between two people using Google Sheets and Apps Script.  
+It calculates who owes who, saves settlement history, and clears the input range for the next round.
+
+## Features
+- Automatic calculation based on payment ratio  
+- One-click “Settle Up” button with confirmation alert  
+- History sheet that records past settlements  
+- Simple UI for easy use
+
+## Technical Details
+| Category | Tools / Techniques |
+|-----------|--------------------|
+| Platform | Google Sheets |
+| Language | Google Apps Script (JavaScript) |
+| Formulas | IF, SUMIF, ROUND, ARRAYFORMULA |
+| Automation | UI alerts, appendRow(), clearContent() |
+| Visualization | Conditional formatting, color-coded results |
+
+## Script Example
+```javascript
+function myClear() {
+  var ui = SpreadsheetApp.getUi();
+  var response = ui.alert(
+    '確定結清嗎阿寶？',
+    '這個動作會清空 A2:E30 的所有內容，並將結算紀錄存入 History 表。',
+    ui.ButtonSet.YES_NO
+  );
+
+  if (response == ui.Button.YES) {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = ss.getActiveSheet();
+    var historySheet = ss.getSheetByName('History');
+
+    if (!historySheet) {
+      historySheet = ss.insertSheet('History');
+      historySheet.appendRow(['Date', 'Summary']);
+    }
+
+    var resultCell = sheet.getRange('H5:I5').getValue();
+
+    var date = new Date();
+    historySheet.appendRow([date, resultCell]);
+
+    sheet.getRange('A2:E30').clearContent();
+
+    ui.alert('已結清並將紀錄保存至 History！');
+  } else {
+    ui.alert('取消囉～');
+  }
+}
 
