@@ -6,37 +6,136 @@
   <title>SplitEase – Smart Expense Splitter</title>
   <style>
     body {
-      font-family: "Inter", sans-serif;
-      background-color: #f8f9fa;
-      text-align: center;
+      font-family: "Inter", "Noto Sans", sans-serif;
+      background-color: #f9fafb;
+      color: #333;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
     }
-    h1 {
-      color: #222;
+
+    header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
     iframe {
       width: 100%;
-      height: 80vh;
+      height: 500px;
       border: 1px solid #ccc;
       border-radius: 10px;
+      margin: 1.5rem 0;
     }
-    p {
-      color: #555;
+
+    section {
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+
+    h2 {
+      color: #007acc;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      line-height: 1.7;
+      padding-left: 1.5rem;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+      margin: 0.5rem;
+    }
+
+    a.button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 1.5rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
-  <h1> SplitEase – Smart Expense Splitter</h1>
-  <p>A collaborative Google Sheets tool for tracking and splitting shared expenses.</p>
+  <header>
+    <h1>💡 SplitEase – Smart Expense Splitter</h1>
+    <p>A collaborative Google Sheets tool for tracking and splitting shared expenses</p>
+  </header>
 
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoE8r7rNy-pc_70fygIRCbmDEA5WLOFSIiznKDFpb7wyjYuJBqwQJ6Ir34aId92OTgArBhoQf7mWxC/pubhtml" 
-    allowfullscreen>
-  </iframe>
+  <main>
+    <section>
+      <h2>🧩 Project Overview</h2>
+      <p>
+        SplitEase is an automated Google Sheets system designed to simplify shared expense management among friends, family, or teams. 
+        It features intuitive data entry, real-time balance updates, and one-click settlement recording.
+      </p>
+    </section>
 
-  <p>Created by <strong>Julie Jang</strong> · View code on 
-    <a href="https://github.com/yourusername/split-expense-tracker" target="_blank">GitHub</a>
-  </p>
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoE8r7rNy-pc_70fygIRCbmDEA5WLOFSIiznKDFpb7wyjYuJBqwQJ6Ir34aId92OTgArBhoQf7mWxC/pubhtml" 
+      allowfullscreen>
+    </iframe>
+
+    <section>
+      <h2>✨ Highlights</h2>
+      <ul>
+        <li>Built entirely in <strong>Google Sheets</strong> using <strong>Apps Script</strong> for automation</li>
+        <li>Interactive <strong>“Settle Up!”</strong> button with confirmation dialog and historical log</li>
+        <li>Dynamic tables and summary dashboard for quick expense visualization</li>
+        <li>Designed for group trips, roommates, or small team finance tracking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>⚙️ Key Features</h2>
+      <ul>
+        <li>Automatic calculation of shared costs and balances</li>
+        <li>Instant summary of who owes whom</li>
+        <li>Data-clearing automation with historical record preservation</li>
+        <li>Fully customizable and extendable Google Sheet template</li>
+      </ul>
+    </section>
+
+    <div class="links">
+      <a href="https://github.com/yourusername/split-expense-tracker" target="_blank" class="button">🔗 View on GitHub</a>
+      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoE8r7rNy-pc_70fygIRCbmDEA5WLOFSIiznKDFpb7wyjYuJBqwQJ6Ir34aId92OTgArBhoQf7mWxC/pubhtml" target="_blank" class="button">📊 Open Live Demo</a>
+    </div>
+  </main>
+
+  <footer>
+    Created by <strong>Julie Jang</strong> · Last updated Nov 2025
+  </footer>
 </body>
 </html>
+
