@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness App Database System – MySQL Project</title>
+  <style>
+    body {
+      font-family: "Inter", "Noto Sans", sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.8rem;
+    }
+    h2 {
+      color: #007acc;
+      margin-top: 0;
+    }
+    ul {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+    .highlight {
+      background: #e8f4ff;
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid #007acc;
+    }
+    code {
+      background-color: #f1f1f1;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fitness App Database System</h1>
+    <p>MySQL Project by <strong>Ya-Jwu Jang</strong> | Conestoga College</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📘 Project Overview</h2>
+      <p>
+        A complete <strong>MySQL database system</strong> designed for a fitness tracking app.  
+        The system allows users to monitor workouts, track progress, and manage subscriptions.  
+        It demonstrates <em>data normalization, DML/DDL scripting, stored procedures, and database backup techniques.</em>
+      </p>
+    </section>
+
+    <section>
+      <h2>💼 My Role</h2>
+      <div class="highlight">
+        <p><strong>Ya-Jwu Jang — DML & Stored Procedure Developer</strong></p>
+        <ul>
+          <li>Created full DML scripts to populate all eight tables with realistic data.</li>
+          <li>Designed a stored procedure (<code>listlazyusers</code>) to identify inactive users with active subscriptions.</li>
+          <li>Performed complete database backup using <code>mysqldump</code>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎯 Project Goal</h2>
+      <p>
+        <strong>Business Objective:</strong> Detect users who have not been active since a specified date but still hold active memberships.  
+        This logic supports user re-engagement and retention campaigns.
+      </p>
+      <pre><code>CALL listlazyusers('2024-11-01');</code></pre>
+      <p><em>Result: 6 users identified as inactive but subscribed.</em></p>
+    </section>
+
+    <section>
+      <h2>📁 Files & Resources</h2>
+      <ul>
+        <li><a href="Ya-Jwu_DML.sql" download>Ya-Jwu_DML.sql</a> – Data population for all tables</li>
+        <li><a href="Ya-Jwu_Jang_ProcedureGoal.sql" download>Ya-Jwu_Jang_ProcedureGoal.sql</a> – Stored procedure for inactive user detection</li>
+        <li><a href="Ya-Jwu_Backup.sql" download>Ya-Jwu_Backup.sql</a> – Full database backup (mysqldump)</li>
+        <li><a href="README.md" target="_blank">README.md</a> – Full project documentation</li>
+      </ul>
+      <p>👉 View on GitHub:  
+        <a href="https://github.com/YOUR-GITHUB-USERNAME/FitnessApp-MySQL" target="_blank">
+          github.com/YOUR-GITHUB-USERNAME/FitnessApp-MySQL
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Ya-Jwu Jang | Database Management – Conestoga College</p>
+  </footer>
+</body>
+</html>
