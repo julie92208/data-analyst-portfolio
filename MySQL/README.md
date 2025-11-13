@@ -70,3 +70,23 @@ BEGIN
    HAVING LastTime_Workout < input_date AND subscription_enddate > CURRENT_DATE()
    ORDER BY UserID;
 END;
+```
+
+---
+
+## 📚 Full Report
+The complete project documentation and contributions from all team members are available in the report below:
+
+📄 [Group1_GroupReport.pdf](Group1_GroupReport.pdf)
+
+**Highlights from the report:**
+- **Section 3 – DML & Backup:** Authored by *Ya-Jwu Jang*, responsible for database population, data backup, and procedure design.  
+- **Section 5 – Goals:** Includes *JANG’s goal procedure* to identify inactive but subscribed users.  
+- **Team Members:**  
+  - Amandus Fernando — Data Mart & Analytics  
+  - Ya-Jwu Jang — DML & Procedure Goal  
+  - Gavril Koryakin — DDL & Normalization  
+  - Sophie Obiyan — ER Diagram & Subscription Procedures  
+- **Instructor:** Yasser Elmankabady  
+- **Course:** PROG8651-SEC1 — Database Management, Conestoga College  
+- **Date:** December 8, 2024
