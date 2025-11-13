@@ -116,6 +116,37 @@
     </section>
 
     <section>
+  <h2>💡 Procedure Example</h2>
+  <p><strong>Goal:</strong> List customers who have not been active since a given date and are still subscribed.</p>
+  <p><em>Input:</em> 2024-11-01 → <em>Result:</em> 6 users</p>
+
+  <pre><code>
+SELECT 
+    user.UserID,
+    user.Fname,
+    user.Lname,
+    user.Email,
+    MAX(progress.Date) AS LastTime_Workout,
+    MAX(Transaction.Startdate) AS Subscription_startdate,
+    discount.duration,
+    DATE_ADD(MAX(Transaction.Startdate), INTERVAL discount.duration DAY) AS subscription_enddate
+FROM user
+JOIN progress ON progress.userID = user.userID
+JOIN Transaction ON Transaction.User_UserID = user.UserID
+JOIN discount ON discount.DiscountID = Transaction.Discount_DiscountID
+WHERE progress.date < '2024-09-01'
+GROUP BY UserID
+HAVING subscription_enddate > CURRENT_DATE()
+ORDER BY UserID;
+  </code></pre>
+
+  <figure style="text-align:center;">
+    <img src="Screenshot%202024-12-08%20102559.png" alt="Inactive Users SQL Query Result" style="max-width:100%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);" />
+    <figcaption><em>Result: 6 users identified as inactive but still subscribed</em></figcaption>
+  </figure>
+</section>
+    
+    <section>
       <h2>📁 Files & Resources</h2>
       <ul>
         <li><a href="Ya-Jwu_DML.sql" download>Ya-Jwu_DML.sql</a> – Data population for all tables</li>
