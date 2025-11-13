@@ -1,4 +1,4 @@
-# 🧩 Fitness App Database System (MySQL)
+# Fitness App Database System (MySQL)
 
 **Course:** Database Management – Conestoga College  
 **Contributor:** **Ya-Jwu Jang (DML & Stored Procedure Developer)**  
@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 A complete **MySQL database system** for a **Fitness App** that enables users to track workouts, monitor progress, and manage subscriptions efficiently.  
 
 This project showcases skills in:
@@ -18,7 +18,7 @@ This project showcases skills in:
 
 ---
 
-## 👩‍💻 My Role – *Ya-Jwu Jang*
+## My Role – *Ya-Jwu Jang*
 **Focus:** *Data Population (DML)* and *User Re-engagement Procedure*  
 
 I was responsible for:
@@ -28,9 +28,9 @@ I was responsible for:
 
 ---
 
-## ⚙️ Key Components
+## Key Components
 
-### 1️⃣ DML Scripts — [`Ya-Jwu_DML.sql`](Ya-Jwu_DML.sql)
+### DML Scripts — [`Ya-Jwu_DML.sql`](Ya-Jwu_DML.sql)
 Populated all eight tables with complete, realistic datasets:
 - 20 Users  
 - 30 Exercises  
@@ -45,7 +45,7 @@ Data integrity, foreign key relationships, and normalized design consistency.
 
 ---
 
-### 2️⃣ Stored Procedure — [`Ya-Jwu_Jang_ProcedureGoal.sql`](Ya-Jwu_Jang_ProcedureGoal.sql)
+### Stored Procedure — [`Ya-Jwu_Jang_ProcedureGoal.sql`](Ya-Jwu_Jang_ProcedureGoal.sql)
 
 **Goal:** Identify users who have not been active since a given date but still have an active subscription.  
 This logic supports re-engagement email campaigns to bring users back to the app.
