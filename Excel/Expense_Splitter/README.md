@@ -35,7 +35,8 @@ It calculates who owes who, keeps a history log, and provides a one-click “Set
 
 ## Apps Script
 
-<pre> ```javascript /** @OnlyCurrentDoc */function myClear() {
+```javascript 
+ /** @OnlyCurrentDoc */function myClear() {
   var ui = SpreadsheetApp.getUi();
   var response = ui.alert(
     '確定結清嗎阿寶？',
@@ -64,5 +65,5 @@ It calculates who owes who, keeps a history log, and provides a one-click “Set
   } else {
     ui.alert('取消囉～');
   }
-}```</pre>
+}
 
