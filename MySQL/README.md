@@ -10,11 +10,11 @@
 A complete **MySQL database system** for a **Fitness App** that enables users to track workouts, monitor progress, and manage subscriptions efficiently.  
 
 This project showcases skills in:
-- ✅ Database normalization (1NF → 3NF)  
-- ✅ Data Definition Language (DDL)  
-- ✅ Data Manipulation Language (DML)  
-- ✅ Stored Procedures for business logic  
-- ✅ Database backup and maintenance  
+- Database normalization (1NF → 3NF)  
+- Data Definition Language (DDL)  
+- Data Manipulation Language (DML)  
+- Stored Procedures for business logic  
+- Database backup and maintenance  
 
 ---
 
