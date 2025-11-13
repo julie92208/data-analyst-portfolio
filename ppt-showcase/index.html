@@ -75,14 +75,14 @@
       font-weight: 600;
     }
 
-    /* --- SLIDER --- */
+   /* --- SLIDER --- */
 .slider-container {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #e6f2fa;
-  border-radius: 8; 
+  border-radius: 8px; 
   margin-bottom: 1rem;
 }
 
@@ -95,10 +95,10 @@
 
 .slides img {
   width: 100%;
-  height: 200px;
+  height: 100%;   /* ← critical fix */
   object-fit: cover;
   flex-shrink: 0;
-  display: block;    
+  display: block;
 }
 
 .slide-btn {
@@ -112,7 +112,7 @@
   border-radius: 50%;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 99;    
+  z-index: 99;
 }
 
 .slide-btn:hover {
@@ -125,6 +125,7 @@
 .next {
   right: 10px;
 }
+
 
   </style>
 </head>
@@ -177,7 +178,7 @@
 
       <h3>Uber Case Study</h3>
       <p>Transformed multi-layered business analysis into concise, visually organized slides with strong hierarchy and clarity.</p>
-      <a href="https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/files/ppt3-Group1_Presentation3_SYST8212_Section11_Fall2024.pptx →</a>
+      <a href="https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/files/ppt3-Group1_Presentation3_SYST8212_Section11_Fall2024.pptx">Download PPTX →</a>
     </div>
 
 
@@ -196,7 +197,7 @@
 
       <h3>JEDI Case Study</h3>
       <p>Simplified a complex government cloud program into a visually clear storyline with structured breakdowns and balanced layouts.</p>
-      <a href="https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/files/ppt2-Group1_Presentation2_SYST8212_Sec11_Fall2024.pptx→</a>
+      <a href="https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/files/ppt2-Group1_Presentation2_SYST8212_Sec11_Fall2024.pptx">Download PPTX →</a>
     </div>
 
 
