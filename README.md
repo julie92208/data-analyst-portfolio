@@ -17,6 +17,7 @@ This portfolio showcases my analytical projects, dashboards, and SQL solutions.
 | MySQL | [Retail Data Analysis](./MySQL/project1_retail_queries) | SQL queries for business KPIs |
 | Tableau | [Superstore Dashboard](./Tableau/project1_superstore_dashboard) | Interactive sales visualization |
 | Power BI | [HR Insights Dashboard](./PowerBI/project1_hr_dashboard) | Employee metrics analysis |
+| PPT showcase | [Sales Dashboard](./Excel/project1_sales_dashboard) | Visualized monthly sales trends |
 
 ## Contact
 - Email juliejulie92208@gmail.com
