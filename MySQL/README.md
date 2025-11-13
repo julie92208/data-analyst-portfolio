@@ -1,7 +1,7 @@
 # Fitness App Database System (MySQL)
 
 **Course:** Database Management – Conestoga College  
-**Contributor:** **Ya-Jwu Jang (DML & Stored Procedure Developer)**  
+**Contributor:** **DML & Stored Procedure Developer**  
 **Date:** December 2024  
 
 ---
@@ -18,7 +18,7 @@ This project showcases skills in:
 
 ---
 
-## My Role – *Ya-Jwu Jang*
+## My Role
 **Focus:** *Data Population (DML)* and *User Re-engagement Procedure*  
 
 I was responsible for:
