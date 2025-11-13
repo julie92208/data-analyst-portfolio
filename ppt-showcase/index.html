@@ -5,479 +5,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PPT Showcase – Presentation Design Portfolio</title>
   <style>
-    :root {
-      --primary: #007acc;
-      --primary-soft: #e6f3ff;
-      --bg: #f9fafb;
-      --text-main: #111827;
-      --text-muted: #6b7280;
-      --border-soft: #e5e7eb;
-      --card-bg: #ffffff;
-      --accent: #f97316;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: "Inter", sans-serif;
+      background-color: #f9fafb;
       margin: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        system-ui, sans-serif;
-      background-color: var(--bg);
-      color: var(--text-main);
+      padding: 0;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #007acc, #00a6fb);
-      color: #ffffff;
-      padding: 2.5rem 1.5rem 2rem;
+      background-color: #007acc;
+      color: white;
       text-align: center;
+      padding: 2.5rem 1rem;
     }
 
     header h1 {
-      margin: 0 0 0.5rem;
-      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 600;
     }
 
     header p {
-      margin: 0.25rem 0;
-      font-size: 0.98rem;
-      opacity: 0.95;
-    }
-
-    .badge-row {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-    }
-
-    .badge {
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      font-size: 0.75rem;
+      margin-top: 0.5rem;
       opacity: 0.95;
     }
 
     main {
       max-width: 1100px;
-      margin: 0 auto;
-      padding: 1.5rem 1.25rem 3rem;
+      margin: auto;
+      padding: 2rem 1.5rem 3rem;
     }
 
-    .intro {
-      margin-bottom: 1.5rem;
+    h2 {
       text-align: center;
-      color: var(--text-muted);
-      font-size: 0.98rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
-    .section-title {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      margin: 2rem 0 1rem;
-    }
-
-    .section-title h2 {
-      margin: 0;
-      font-size: 1.3rem;
-    }
-
-    .section-title span {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .projects {
+    /* --- CARD LAYOUT --- */
+    .grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 1.25rem;
-    }
-
-    @media (min-width: 768px) {
-      .projects {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .projects {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      }
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
     .card {
-      background-color: var(--card-bg);
+      background: white;
+      padding: 1.2rem;
       border-radius: 1rem;
-      border: 1px solid var(--border-soft);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      border: 1px solid #e5e7eb;
     }
 
-    .card-thumb {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background-color: var(--primary-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      color: var(--text-muted);
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
     }
 
-    .card-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.8rem;
     }
 
-    .card-body {
-      padding: 1rem 1.1rem 1rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .card-title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 0.5rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .card-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .tag {
-      font-size: 0.7rem;
-      padding: 0.15rem 0.55rem;
-      border-radius: 999px;
-      background-color: var(--primary-soft);
-      color: #05599b;
-      white-space: nowrap;
-    }
-
-    .card-meta {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .card-meta span {
-      margin-right: 0.75rem;
-    }
-
-    .card-list {
-      margin: 0.2rem 0 0.6rem 1rem;
-      padding: 0;
-      font-size: 0.85rem;
-      color: var(--text-main);
-    }
-
-    .card-list li {
-      margin-bottom: 0.2rem;
-      line-height: 1.35;
-    }
-
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: auto;
-      padding-top: 0.6rem;
-      border-top: 1px dashed var(--border-soft);
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary,
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.35rem;
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      cursor: pointer;
+    .card a {
+      color: #007acc;
       text-decoration: none;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background-color: var(--primary);
-      color: #ffffff;
-      border: 1px solid #0369a1;
-    }
-
-    .btn-primary:hover {
-      opacity: 0.94;
-    }
-
-    .btn-ghost {
-      background-color: transparent;
-      border: 1px dashed var(--border-soft);
-      color: var(--text-muted);
-    }
-
-    .btn-ghost:hover {
-      border-style: solid;
-    }
-
-    .icon {
-      font-size: 0.9rem;
-    }
-
-    .footnote {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem;
-      font-size: 0.7rem;
-      margin-top: 0.25rem;
-    }
-
-    .pill {
-      padding: 0.15rem 0.55rem;
-      border-radius: 999px;
-      background-color: #f3f4f6;
-    }
-
-    .highlight {
-      color: var(--accent);
       font-weight: 600;
+    }
+
+    /* --- SLIDER --- */
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #e6f2fa;
+      margin-bottom: 1rem;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.4s ease;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.35);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .slide-btn:hover {
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>PPT Showcase – Presentation Design Portfolio</h1>
-    <p>Selected PowerPoint decks showcasing clear storytelling, visual hierarchy, and clean aesthetics.</p>
-    <p>Focused on making complex information easy to understand at a glance.</p>
-    <div class="badge-row">
-      <span class="badge">Business storytelling</span>
-      <span class="badge">Data communication</span>
-      <span class="badge">Visual hierarchy</span>
-      <span class="badge">Minimal design</span>
+
+<header>
+  <h1>PPT Showcase</h1>
+  <p>Presentation design projects with clean visuals and strong communication.</p>
+</header>
+
+<main>
+  <h2>Featured PPT Projects</h2>
+
+  <div class="grid">
+
+    <!-- PROJECT 1 -------------------------->
+    <div class="card">
+      <div class="slider-container" data-slider="1">
+        <div class="slides">
+          <img src="./assets/p1-1.png" alt="">
+          <img src="./assets/p1-2.png" alt="">
+          <img src="./assets/p1-3.png" alt="">
+        </div>
+        <button class="slide-btn prev" onclick="prevSlide(1)">❮</button>
+        <button class="slide-btn next" onclick="nextSlide(1)">❯</button>
+      </div>
+
+      <h3>Business Strategy Deck</h3>
+      <p>Executive-level storyline: Problem → Insight → Solution with clean layouts.</p>
+      <a href="./files/business_strategy_deck.pptx">Download PPTX →</a>
     </div>
-  </header>
 
-  <main>
-    <p class="intro">
-      This page highlights a collection of presentation decks I designed for
-      business strategy, data analysis, product proposals, and training. Each
-      project demonstrates how I combine structure, clarity, and aesthetics to
-      deliver slides that are both visually appealing and easy to follow.
-    </p>
 
-    <section>
-      <div class="section-title">
-        <h2>Featured Presentation Decks</h2>
-        <span>Click “Download PPTX” to view the full deck.</span>
+    <!-- PROJECT 2 -------------------------->
+    <div class="card">
+      <div class="slider-container" data-slider="2">
+        <div class="slides">
+          <img src="./assets/p2-1.png" alt="">
+          <img src="./assets/p2-2.png" alt="">
+          <img src="./assets/p2-3.png" alt="">
+        </div>
+        <button class="slide-btn prev" onclick="prevSlide(2)">❮</button>
+        <button class="slide-btn next" onclick="nextSlide(2)">❯</button>
       </div>
 
-      <div class="projects">
-        <!-- Project 1: Business Strategy Deck -->
-        <article class="card">
-          <div class="card-thumb">
-            <!-- Replace with your real thumbnail -->
-            <!-- Example: <img src="./assets/thumbnail-business.png" alt="Business Strategy Deck preview"> -->
-            Business Strategy Deck – thumbnail placeholder
-          </div>
-          <div class="card-body">
-            <div class="card-title-row">
-              <div class="card-title">Business Strategy Deck</div>
-              <span class="tag">Executive deck</span>
-            </div>
-            <div class="card-meta">
-              <span>Type: Strategy & overview</span>
-              <span>Slides: ~15–20</span>
-            </div>
-            <ul class="card-list">
-              <li>Structured <span class="highlight">problem → insight → solution</span> storyline.</li>
-              <li>Simplified market and competitor analysis into clear visuals.</li>
-              <li>Used consistent color palette and whitespace for a calm, professional look.</li>
-              <li>Executive summary slides highlight key decisions in 3–5 bullets.</li>
-            </ul>
-            <div class="pill-row">
-              <span class="pill">C-level friendly</span>
-              <span class="pill">Market analysis</span>
-              <span class="pill">Story-driven</span>
-            </div>
-            <div class="card-footer">
-              <a
-                class="btn-primary"
-                href="./files/business_strategy_deck.pptx"
-                target="_blank"
-              >
-                <span class="icon">📥</span>
-                <span>Download PPTX</span>
-              </a>
-              <a class="btn-ghost" href="#top">
-                <span class="icon">👁️</span>
-                <span>Slide focus & structure</span>
-              </a>
-            </div>
-          </div>
-        </article>
+      <h3>Data Analysis Report</h3>
+      <p>Insight-driven charts with dashboard-style summaries for business decisions.</p>
+      <a href="./files/data_analysis_report.pptx">Download PPTX →</a>
+    </div>
 
-        <!-- Project 2: Data Analysis Report -->
-        <article class="card">
-          <div class="card-thumb">
-            <!-- Replace with your real thumbnail -->
-            <!-- Example: <img src="./assets/thumbnail-data-report.png" alt="Data Analysis Report preview"> -->
-            Data Analysis Report – thumbnail placeholder
-          </div>
-          <div class="card-body">
-            <div class="card-title-row">
-              <div class="card-title">Data Analysis Report</div>
-              <span class="tag">Analytics deck</span>
-            </div>
-            <div class="card-meta">
-              <span>Type: Insights & findings</span>
-              <span>Slides: ~20–25</span>
-            </div>
-            <ul class="card-list">
-              <li>Turned tables into charts that tell a clear story, not just show numbers.</li>
-              <li>Highlighted <span class="highlight">key insights</span> using callout boxes and annotations.</li>
-              <li>Organized content into sections: context, method, findings, recommendations.</li>
-              <li>Designed dashboard-style overview slides for quick scanning.</li>
-            </ul>
-            <div class="pill-row">
-              <span class="pill">Data storytelling</span>
-              <span class="pill">Charts & visuals</span>
-              <span class="pill">Insight-first</span>
-            </div>
-            <div class="card-footer">
-              <a
-                class="btn-primary"
-                href="./files/data_analysis_report.pptx"
-                target="_blank"
-              >
-                <span class="icon">📥</span>
-                <span>Download PPTX</span>
-              </a>
-              <a class="btn-ghost" href="#top">
-                <span class="icon">📊</span>
-                <span>Visual communication</span>
-              </a>
-            </div>
-          </div>
-        </article>
 
-        <!-- Project 3: Feature Proposal Deck -->
-        <article class="card">
-          <div class="card-thumb">
-            <!-- Replace with your real thumbnail -->
-            <!-- Example: <img src="./assets/thumbnail-proposal.png" alt="Feature Proposal Deck preview"> -->
-            Feature Proposal Deck – thumbnail placeholder
-          </div>
-          <div class="card-body">
-            <div class="card-title-row">
-              <div class="card-title">Product Feature Proposal</div>
-              <span class="tag">Proposal deck</span>
-            </div>
-            <div class="card-meta">
-              <span>Type: Pitch & proposal</span>
-              <span>Slides: ~10–15</span>
-            </div>
-            <ul class="card-list">
-              <li>Designed around a clear flow: <span class="highlight">Why → What → How → Impact</span>.</li>
-              <li>Used icons and visuals instead of dense text for feature explanations.</li>
-              <li>Comparison tables make trade-offs easy to see.</li>
-              <li>Impact slides focus on ROI, user value, and implementation effort.</li>
-            </ul>
-            <div class="pill-row">
-              <span class="pill">Product thinking</span>
-              <span class="pill">Pitch-ready</span>
-              <span class="pill">Value-focused</span>
-            </div>
-            <div class="card-footer">
-              <a
-                class="btn-primary"
-                href="./files/feature_proposal.pptx"
-                target="_blank"
-              >
-                <span class="icon">📥</span>
-                <span>Download PPTX</span>
-              </a>
-              <a class="btn-ghost" href="#top">
-                <span class="icon">💡</span>
-                <span>Structure & clarity</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4: Training / Tutorial Slides -->
-        <article class="card">
-          <div class="card-thumb">
-            <!-- Replace with your real thumbnail -->
-            <!-- Example: <img src="./assets/thumbnail-training.png" alt="Training Slides preview"> -->
-            Training & Tutorial Slides – thumbnail placeholder
-          </div>
-          <div class="card-body">
-            <div class="card-title-row">
-              <div class="card-title">Training & Tutorial Slides</div>
-              <span class="tag">Instructional deck</span>
-            </div>
-            <div class="card-meta">
-              <span>Type: How-to & training</span>
-              <span>Slides: ~20+</span>
-            </div>
-            <ul class="card-list">
-              <li>Step-by-step structure with one clear action per slide.</li>
-              <li>Used arrows, highlights, and screenshots to guide attention.</li>
-              <li>Balanced between presenter-led and self-paced reading.</li>
-              <li>Designed to minimize cognitive load and reduce confusion.</li>
-            </ul>
-            <div class="pill-row">
-              <span class="pill">User education</span>
-              <span class="pill">Process-focused</span>
-              <span class="pill">Clear instructions</span>
-            </div>
-            <div class="card-footer">
-              <a
-                class="btn-primary"
-                href="./files/training_materials.pptx"
-                target="_blank"
-              >
-                <span class="icon">📥</span>
-                <span>Download PPTX</span>
-              </a>
-              <a class="btn-ghost" href="#top">
-                <span class="icon">📘</span>
-                <span>Learning experience</span>
-              </a>
-            </div>
-          </div>
-        </article>
+    <!-- PROJECT 3 -------------------------->
+    <div class="card">
+      <div class="slider-container" data-slider="3">
+        <div class="slides">
+          <img src="./assets/p3-1.png" alt="">
+          <img src="./assets/p3-2.png" alt="">
+          <img src="./assets/p3-3.png" alt="">
+        </div>
+        <button class="slide-btn prev" onclick="prevSlide(3)">❮</button>
+        <button class="slide-btn next" onclick="nextSlide(3)">❯</button>
       </div>
-    </section>
 
-    <p class="footnote">
-      All slides are designed with a focus on clarity, hierarchy, and visual
-      balance, ensuring each presentation is easy to follow and visually
-      consistent.
-    </p>
-  </main>
+      <h3>Product Feature Proposal</h3>
+      <p>Clear “Why → What → How → Impact” storyline for product decision-making.</p>
+      <a href="./files/feature_proposal.pptx">Download PPTX →</a>
+    </div>
+
+
+    <!-- PROJECT 4 -------------------------->
+    <div class="card">
+      <div class="slider-container" data-slider="4">
+        <div class="slides">
+          <img src="./assets/p4-1.png" alt="">
+          <img src="./assets/p4-2.png" alt="">
+          <img src="./assets/p4-3.png" alt="">
+        </div>
+        <button class="slide-btn prev" onclick="prevSlide(4)">❮</button>
+        <button class="slide-btn next" onclick="nextSlide(4)">❯</button>
+      </div>
+
+      <h3>Training & Tutorial Slides</h3>
+      <p>Step-by-step workflows with highlights, callouts, and clean instructional design.</p>
+      <a href="./files/training_materials.pptx">Download PPTX →</a>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  const slidePositions = {};
+
+  function nextSlide(id) {
+    const container = document.querySelector(`[data-slider="${id}"] .slides`);
+    const slidesCount = container.children.length;
+
+    slidePositions[id] = (slidePositions[id] + 1 || 1) % slidesCount;
+    container.style.transform = `translateX(-${slidePositions[id] * 100}%)`;
+  }
+
+  function prevSlide(id) {
+    const container = document.querySelector(`[data-slider="${id}"] .slides`);
+    const slidesCount = container.children.length;
+
+    slidePositions[id] = (slidePositions[id] - 1 + slidesCount) % slidesCount;
+    container.style.transform = `translateX(-${slidePositions[id] * 100}%)`;
+  }
+</script>
+
 </body>
 </html>
