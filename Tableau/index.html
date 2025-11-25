@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau Projects – Julie’s Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .project-img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .project-info {
+      flex: 1;
+    }
+
+    .project-info h2 {
+      margin-top: 0;
+      color: #007acc;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      line-height: 1.65;
+    }
+
+    .btn-group {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      background-color: #007acc;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #005f99;
+    }
+
+    footer {
+      background-color:#007acc;
+      color:white;
+      text-align:center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+      font-family: "Inter", sans-serif;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    @media(max-width: 780px) {
+      .project-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .project-img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Tableau Projects</h1>
+  <p>Interactive Dashboards built with real-world data</p>
+</header>
+
+<main>
+
+  <!-- Project 1 -->
+  <div class="project-card">
+    <img src="global-health-workforce/dashboard-preview.png" class="project-img" alt="Global healthcare dashboard preview">
+    
+    <div class="project-info">
+      <h2>Global Healthcare Workforce Analysis</h2>
+      <p>A data-driven analysis using WHO Global Health Observatory data (194 countries, 2010–2023).</p>
+      
+      <ul>
+        <li>Analyzed global doctor and nurse distribution using Python + Tableau</li>
+        <li>Computed Nurse-to-Doctor ratios across all major regions</li>
+        <li>Identified top 5 highest ratio countries</li>
+        <li>Trend analysis for Canada (2018–2023)</li>
+        <li>Correlation analysis for 2023 healthcare workforce</li>
+      </ul>
+
+      <div class="btn-group">
+        <a class="btn" href="global-health-workforce/index.html" target="_blank">View Project</a>
+        <a class="btn" href="https://public.tableau.com/views/InsightFinal/GlobalHealthcareWorkforceAnalysis" target="_blank">Live Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 Julie’s Data Analyst Portfolio</p>
+  <small>Built with Tableau · Python · GitHub Pages</small>
+</footer>
+
+</body>
+</html>
 
