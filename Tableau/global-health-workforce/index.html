@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Global Healthcare Workforce Analysis – Tableau Project</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: "Inter", sans-serif;
@@ -13,38 +15,44 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #007acc;
       color: white;
       text-align: center;
       padding: 2.5rem 1rem;
     }
+
     header h1 {
       margin: 0;
       font-size: 2rem;
       font-weight: 600;
     }
+
     header p {
-      margin: 0.5rem 0 0;
+      margin-top: 0.5rem;
       opacity: 0.95;
-      font-size: 1rem;
     }
+
     main {
       max-width: 900px;
       margin: auto;
       padding: 2.5rem 1.5rem;
     }
+
     h2 {
       color: #007acc;
       margin-top: 2.5rem;
       font-size: 1.4rem;
     }
+
     .screenshot {
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       margin-top: 1rem;
     }
+
     iframe {
       width: 100%;
       height: 75vh;
@@ -52,9 +60,48 @@
       border-radius: 10px;
       margin: 1.5rem 0;
     }
+
     ul {
       line-height: 1.8;
     }
+
+    .code-block {
+      background: #2d2d2d;
+      color: #eee;
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+      line-height: 1.5;
+      margin-top: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .download-box {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 1.2rem;
+      border-left: 4px solid #007acc;
+      margin-top: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .download-box a {
+      display: inline-block;
+      background: #007acc;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 0.6rem;
+      transition: 0.2s;
+    }
+
+    .download-box a:hover {
+      background: #005f99;
+    }
+
     footer {
       background-color:#007acc;
       color:white;
@@ -63,10 +110,12 @@
       margin-top: 3rem;
       font-family: "Inter", sans-serif;
     }
+
     footer p {
       margin: 0;
       font-size: 1rem;
     }
+
     footer small {
       display: block;
       margin-top: 0.3rem;
@@ -75,116 +124,143 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Global Healthcare Workforce Analysis</h1>
-  <p>Tableau Dashboard · WHO Global Health Observatory Dataset</p>
+  <p>Interactive Tableau Dashboard · Python Cleaning · WHO Dataset</p>
 </header>
 
 <main>
 
-  <h2>Project Overview</h2>
-  <p>
-    This project analyzes global doctor and nurse workforce distribution using real-world data from the
-    WHO Global Health Observatory (GHO). The dataset includes 194 countries and covers healthcare
-    workforce trends from 2010–2023. I used Python to clean and prepare the data, then visualized the
-    insights through an interactive Tableau dashboard.
-  </p>
+  <h2>Live Tableau Dashboard</h2>
 
-<h2>Live Tableau Dashboard</h2>
+  <!-- YOUR TABLEAU EMBED CODE INSERTED BELOW -->
+  <div class='tableauPlaceholder' id='viz1764036477948' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Global Healthcare Workforce Analysis'
+      src='https://public.tableau.com/static/images/In/InsightFinal/GlobalHealthcareWorkforceAnalysis/1_rss.png' style='border: none' /></a>
+    </noscript>
 
-<div class='tableauPlaceholder' id='viz1764036477948' style='position: relative'>
-  <noscript>
-    <a href='#'>
-      <img alt='Global Healthcare Workforce Analysis'
-      src='https://public.tableau.com/static/images/In/InsightFinal/GlobalHealthcareWorkforceAnalysis/1_rss.png'
-      style='border: none' />
-    </a>
-  </noscript>
-
-  <object class='tableauViz' style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='InsightFinal/GlobalHealthcareWorkforceAnalysis' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image'
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='InsightFinal/GlobalHealthcareWorkforceAnalysis' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
       value='https://public.tableau.com/static/images/In/InsightFinal/GlobalHealthcareWorkforceAnalysis/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-    <param name='filter' value='publish=yes' />
-  </object>
-</div>
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
 
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1764036477948');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  if (divElement.offsetWidth > 800) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-  } else if (divElement.offsetWidth > 500) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-  } else {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '1927px';
-  }
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1764036477948');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+      vizElement.style.width = '100%'; vizElement.style.height = '1927px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
 
-  <h2>Dashboard Preview</h2>
+
+  <h2>Python Code – Data Cleaning</h2>
+  <div class="code-block">
+import pandas as pd
+
+# Load datasets
+doctor = pd.read_csv("data-doctor.csv")
+nurse = pd.read_csv("data-nurse.csv")
+
+# Select useful columns
+cols = ["Location", "ParentLocation", "Period", "Indicator", "Value"]
+doctor = doctor[cols]
+nurse = nurse[cols]
+
+# Rename for clarity
+doctor.rename(columns={"Value": "Doctors_per_10k"}, inplace=True)
+nurse.rename(columns={"Value": "Nurses_per_10k"}, inplace=True)
+
+# Merge
+merged = pd.merge(
+    doctor, nurse,
+    on=["Location", "ParentLocation", "Period"],
+    how="inner"
+)
+
+# Compute nurse-to-doctor ratio
+merged["Nurse_to_Doctor_Ratio"] = (
+    merged["Nurses_per_10k"] / merged["Doctors_per_10k"]
+)
+
+merged.head()
+  </div>
+
+<h2>Dashboard Preview</h2>
   <img src="Tableau/global-health-workforce/assets/global-health-workforce:dashboard-preview.jpeg" class="screenshot" alt="Dashboard preview" />
 
-  <h2>Dataset Source</h2>
-  <p>
-    Data retrieved from the WHO Global Health Observatory (GHO) – National Health Workforce Accounts (NHWA).<br>
-    <a href="https://www.who.int/data/gho/data/themes/topics/health-workforce">
-      🔗 WHO Health Workforce Dataset
-    </a>
-  </p>
+  <h2>Python Code – Generating Insights</h2>
+  <div class="code-block">
+# 1. Regional average ratio
+regional_avg = merged.groupby("ParentLocation")["Nurse_to_Doctor_Ratio"].mean()
 
-  <h2>Data Processing (Python)</h2>
-  <p>
-    I used Python (Pandas & Jupyter Notebook) to merge, clean, and transform the two main files:
-  </p>
-  <ul>
-    <li><strong>data-doctor.csv</strong> – Doctors per 10,000 population</li>
-    <li><strong>data-nurse.csv</strong> – Nurses & midwives per 10,000 population</li>
-    <li>Created <strong>Nurse_to_Doctor_Ratio</strong> as the key metric for analysis</li>
-  </ul>
+# 2. Top 5 countries
+top5 = merged.groupby("Location")["Nurse_to_Doctor_Ratio"].mean().nlargest(5)
 
-  <h2>Key Insights</h2>
-  <ul>
-    <li><strong>Divergent Trends (2010–2020):</strong> Some regions show widening gaps between nurse and doctor counts.</li>
-    <li><strong>Regional Disparity:</strong> Africa has the highest nurse-to-doctor ratios globally, showing structural workforce imbalance.</li>
-    <li><strong>Top 5 Countries:</strong> Highest ratios appear mainly in Africa and the Eastern Mediterranean region.</li>
-    <li><strong>Canada (2018–2023):</strong> Nurses grew rapidly while doctor growth remained modest.</li>
-    <li><strong>Global Correlation:</strong> Countries with more doctors also tend to have more nurses — a strong positive relationship.</li>
-  </ul>
+# 3. Canada 2018–2023
+canada = merged[merged["Location"] == "Canada"].sort_values("Period")
 
-  <h2>Files Included</h2>
+# 4. Correlation (2023)
+data2023 = merged[merged["Period"] == 2023]
+correlation = data2023["Doctors_per_10k"].corr(data2023["Nurses_per_10k"])
+  </div>
+
+
+
+  <h2>Download Final Report</h2>
+  <div class="download-box">
+    <p>Full PDF/Docx report including introduction, insights, analysis, and recommendations.</p>
+    <a href="/mnt/data/S25_INFO8677_sec2_Group1_Final Report.docx" download>Download Final Report (.docx)</a>
+  </div>
+
+  <h2>📊 Download Presentation</h2>
+  <div class="download-box">
+    <p>Final presentation slides used to communicate the analysis and key findings.</p>
+    <a href="/mnt/data/S25_INFO8677_sec2_Group1_Group Project.pptx" download>Download Presentation (.pptx)</a>
+  </div>
+
+
+  <h2>Summary of Key Insights</h2>
   <ul>
-    <li>Cleaned dataset (optional)</li>
-    <li>Python notebook for data cleaning</li>
-    <li>Tableau dashboard (live + screenshot)</li>
-    <li>Full analysis report (PDF)</li>
+    <li>Divergent nurse-to-doctor ratio trends across regions (2010–2020)</li>
+    <li>Africa has the highest average nurse-to-doctor ratio globally</li>
+    <li>Top 5 highest ratio countries show strong regional similarity</li>
+    <li>Canada (2018–2023): nurse growth much higher than doctor growth</li>
+    <li>Strong positive correlation between doctors and nurses globally (2023)</li>
   </ul>
 
 </main>
 
 <footer>
   <p>© 2025 Julie’s Data Analyst Portfolio</p>
-  <small>Built with Tableau · Python · HTML · GitHub Pages</small>
+  <small>Built with Tableau · Python · GitHub Pages</small>
 </footer>
 
 </body>
 </html>
+
