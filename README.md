@@ -9,7 +9,7 @@ I used to spend my days experimenting with lighting setups and editing technique
 
 Self-learning has always been a big part of who I am. Whether it was teaching myself photography, mastering post-production, or now diving deep into data analytics, I enjoy the process of exploring, improving, and building something useful.
 
-Outside of work, I’m usually absorbing new knowledge, organizing things (including spreadsheets!), or recently — getting surprisingly addicted to learning chess.
+Outside of work, I’m usually absorbing new knowledge, organizing things (including spreadsheets!), or recently — getting surprisingly addicted to learning chess, Azure, and Python.
 I love challenges, creative problem-solving, and finding joy in continuous growth.
 
 ## Skills
@@ -21,11 +21,10 @@ I love challenges, creative problem-solving, and finding joy in continuous growt
 ## Projects
 | Category | Project | Description |
 |-----------|----------|-------------|
-| Excel | [Sales Dashboard](./Excel/project1_sales_dashboard) | Visualized monthly sales trends |
-| MySQL | [Retail Data Analysis](./MySQL/project1_retail_queries) | SQL queries for business KPIs |
-| Tableau | [Superstore Dashboard](./Tableau/project1_superstore_dashboard) | Interactive sales visualization |
-| Power BI | [HR Insights Dashboard](./PowerBI/project1_hr_dashboard) | Employee metrics analysis |
-| PPT showcase | [Sales Dashboard](./Excel/project1_sales_dashboard) | Visualized monthly sales trends |
+| Excel | [Expense Splitter (Google Sheets + Apps Script)](https://github.com/julie92208/data-analyst-portfolio/tree/main/Excel/Expense_Splitter) | Automatic calculation of shared expenses |
+| MySQL | [Fitness App Database System](https://github.com/julie92208/data-analyst-portfolio/tree/main/MySQL) | A complete MySQL database system for a Fitness App |
+| Tableau | [Global Healthcare Workforce Analysis](https://github.com/julie92208/data-analyst-portfolio/blob/main/Tableau/global-health-workforce/README.md) | Tableau Dashboard · Python Data Cleaning · WHO Dataset |
+| PPT showcase | [PPT Showcase](https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/index.html) | Presentation design projects with clean visuals and strong communication. |
 
 ## Contact
 - Email juliejulie92208@gmail.com
