@@ -102,7 +102,7 @@ The Tableau dashboard includes:
 
 Dashboard preview:
 
-![Dashboard Preview](./Tableau/global-health-workforce/assets/global-health-workforce:dashboard-preview.jpeg)
+![Dashboard Preview](https://github.com/julie92208/data-analyst-portfolio/blob/main/Tableau/global-health-workforce/assets/global-health-workforce%3Adashboard-preview.jpeg)
 
 ---
 
