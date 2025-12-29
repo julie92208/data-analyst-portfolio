@@ -75,7 +75,10 @@ merged = pd.merge(
 
 merged["Nurse_to_Doctor_Ratio"] = (
     merged["Nurses_per_10k"] / merged["Doctors_per_10k"]
-)```
+)
+```
+
+---
 
 ## Key Insights
 
