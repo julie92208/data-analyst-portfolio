@@ -46,7 +46,7 @@ Raw files:
 
 ---
 
-## Data Preparation
+## Data Preparation (Python)
 
 Key preprocessing steps included:
 - Filtering relevant attributes
@@ -102,7 +102,7 @@ The Tableau dashboard includes:
 
 Dashboard preview:
 
-![Dashboard Preview](dashboard-preview.jpg)
+![Dashboard Preview](Tableau/global-health-workforce/assets/global-health-workforce:dashboard-preview.jpeg)
 
 ---
 
