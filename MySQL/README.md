@@ -74,7 +74,7 @@ END;
 
 ---
 
-## 📚 Full Report
+## Full Report
 The complete project documentation and contributions from all team members are available in the report below:
 
 📄 [Group1_GroupReport.pdf](Group1_GroupReport.pdf)
