@@ -6,6 +6,7 @@ The goal was to design a **production monitoring dashboard** that provides execu
 
 The dashboard supports decision-making for operations leadership who cannot be physically present at all production sites.
 
+[case_overview](https://github.com/julie92208/data-analyst-portfolio/tree/d78ed3db939bb87cde27c4af9e388161cdd48c03/power%20bi/docs)
 ---
 
 ## Business Objectives
