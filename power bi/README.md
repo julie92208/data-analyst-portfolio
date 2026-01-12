@@ -48,4 +48,27 @@ The dashboard supports decision-making for operations leadership who cannot be p
 ---
 
 ## Repository Structure
+data/ → Excel production datasets
+dashboard/ → Power BI file and screenshots
+docs/ → Case reference and documentation
 
+---
+
+## Key Skills Demonstrated
+- Business requirements interpretation  
+- KPI definition and operational metrics design  
+- Data modeling and visualization  
+- Translating business problems into BI solutions  
+
+---
+
+## Notes
+- This project is based on an academic case study.
+- Data has been **simulated and anonymized** for portfolio use.
+- Power BI `.pbix` file is included for reference; screenshots are provided for quick review.
+
+---
+
+## Author
+**Julie Jang**  
+Business Analysis & Data Analytics  
