@@ -24,6 +24,7 @@ I love challenges, creative problem-solving, and finding joy in continuous growt
 | Excel | [Expense Splitter (Google Sheets + Apps Script)](https://github.com/julie92208/data-analyst-portfolio/tree/main/Excel/Expense_Splitter) | Automatic calculation of shared expenses |
 | MySQL | [Fitness App Database System](https://github.com/julie92208/data-analyst-portfolio/tree/main/MySQL) | A complete MySQL database system for a Fitness App |
 | Tableau | [Global Healthcare Workforce Analysis](https://github.com/julie92208/data-analyst-portfolio/blob/main/Tableau/global-health-workforce/README.md) | Tableau Dashboard · Python Data Cleaning · WHO Dataset |
+| Power BI | [CBR Production Monitoring Dashboard](https://github.com/julie92208/data-analyst-portfolio/tree/41d90d2f1972bbf54303a8005d94e7b5798ba385/power%20bi) | Data modeling · DAX measures · dashboard visualization |
 | PPT showcase | [PPT Showcase](https://julie92208.github.io/data-analyst-portfolio/ppt-showcase/index.html) | Presentation design projects with clean visuals and strong communication. |
 
 ## Contact
