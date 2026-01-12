@@ -33,7 +33,7 @@ The dashboard supports decision-making for operations leadership who cannot be p
 
 ---
 
-## Dashboard Features
+## Dashboard Features [.pbix](https://github.com/julie92208/data-analyst-portfolio/blob/d3c19309ce2f30a14bf9edfc11b819221a739952/power%20bi/dashboard/powerbi_dashboard.pbix)
 - Daily production volume tracking  
 - 30-day rolling production view  
 - Month-over-month trend analysis  
