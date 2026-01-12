@@ -17,7 +17,7 @@ The dashboard supports decision-making for operations leadership who cannot be p
 ---
 
 ## Data Sources
-- **Production logs ( [Excel](./power bi/data/production_logs.xlsx))**  
+- **Production logs ( [Excel] )(./power bi/data/production_logs.xlsx)**  
   - Manually recorded by production employees after each batch
   - Stored and maintained in Microsoft 365 (simulated)
 - **Sales data**  
