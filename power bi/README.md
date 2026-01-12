@@ -48,9 +48,9 @@ The dashboard supports decision-making for operations leadership who cannot be p
 ---
 
 ## Repository Structure
-data/ → Excel production datasets
-dashboard/ → Power BI file and screenshots
-docs/ → Case reference and documentation
+- data/ → Excel production datasets
+- dashboard/ → Power BI file and screenshots
+- docs/ → Case reference and documentation
 
 ---
 
