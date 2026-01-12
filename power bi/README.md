@@ -1,12 +1,11 @@
 # CBR Production Monitoring Dashboard (CARE)
 
-## Project Overview
+## Project Overview [case_overview](https://github.com/julie92208/data-analyst-portfolio/tree/d78ed3db939bb87cde27c4af9e388161cdd48c03/power%20bi/docs)
 This project is a **Business Intelligence case study** based on a fictional coffee production company (CBR).  
 The goal was to design a **production monitoring dashboard** that provides executives with real-time visibility into production performance, inventory levels, and operational trends across multiple locations.
 
 The dashboard supports decision-making for operations leadership who cannot be physically present at all production sites.
 
-[case_overview](https://github.com/julie92208/data-analyst-portfolio/tree/d78ed3db939bb87cde27c4af9e388161cdd48c03/power%20bi/docs)
 ---
 
 ## Business Objectives
